@@ -62,6 +62,8 @@ function! s:hi(group, guifg, guibg, attr, guisp)
 endfunction
 
 call s:hi("Normal", s:aimi_7, s:aimi_0, "", "")
+call s:hi("Title", s:aimi_D, "", "", "")
+call s:hi("SignColumn", s:aimi_7, s:aimi_0, "", "")
 call s:hi("ColorColumn", "", s:aimi_1, "", "")
 call s:hi("Cursor", s:aimi_0, s:aimi_5, "", "")
 call s:hi("CursorIM", s:aimi_0, s:aimi_5, "", "")
@@ -72,7 +74,6 @@ call s:hi("LineNr", s:aimi_2, "", "", "")
 call s:hi("CursorLineNr", s:aimi_3, "", "", "")
 call s:hi("MatchParen", s:aimi_7, s:aimi_2, "", "")
 call s:hi("Visual", "", s:aimi_2, "", "")
-call s:hi("VertSplit", s:aimi_1, s:aimi_0, "", "")
 call s:hi("NonText", s:aimi_2, "", "", "")
 call s:hi("Search", s:aimi_0, s:aimi_4, "", "")
 call s:hi("SpecialKey", s:aimi_3, "", "", "")
@@ -80,12 +81,17 @@ call s:hi("WarningMsg", s:aimi_0, s:aimi_9, "", "")
 call s:hi("ErrorMsg", s:aimi_0, s:aimi_8, "", "")
 call s:hi("Error", s:aimi_0, s:aimi_8, "", "")
 call s:hi("WildMenu", s:aimi_7, s:aimi_2, "", "")
-call s:hi("TabLine", s:aimi_6, s:aimi_1, "NONE", "")
-call s:hi("TabLineFill", s:aimi_6, s:aimi_1, "NONE", "")
+call s:hi("VertSplit", s:aimi_2, s:aimi_0, "", "")
+call s:hi("TabLine", s:aimi_6, s:aimi_2, "NONE", "")
+call s:hi("TabLineFill", s:aimi_6, s:aimi_2, "NONE", "")
 call s:hi("TabLineSel", s:aimi_6, s:aimi_3, "NONE", "")
-call s:hi("StatusLine", s:aimi_5, s:aimi_1, "NONE", "")
-call s:hi("StatusLineNC", s:aimi_2, s:aimi_1, "NONE", "")
+call s:hi("StatusLine", s:aimi_5, s:aimi_2, "NONE", "")
+call s:hi("StatusLineNC", s:aimi_2, s:aimi_2, "NONE", "")
 call s:hi("EndOfBuffer", s:aimi_2, s:aimi_0, "NONE", "")
+call s:hi("Folded", s:aimi_3, s:aimi_1, "", "")
+
+call s:hi("Pmenu", s:aimi_7, s:aimi_2, "", "")
+call s:hi("PmenuSel", s:aimi_0, s:aimi_D, "", "")
 
 call s:hi("Directory", s:aimi_4, "", "", "")
 
@@ -147,3 +153,9 @@ call s:hi("GitGutterDelete", s:aimi_8, "", "", "")
 call s:hi("NERDTreeExecFile", s:aimi_4, "", "", "")
 hi! link NERDTreeDirSlash Keyword
 hi! link NERDTreeHelp Comment
+
+" vim-signature
+call s:hi("SignatureMarkText", s:aimi_D, "", "", "")
+
+" vim-startify
+call s:hi("StartifyBracket", s:aimi_2, "", "", "")

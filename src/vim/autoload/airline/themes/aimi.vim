@@ -56,7 +56,7 @@ let g:airline#themes#aimi#palette.replace = airline#themes#generate_color_map(s:
 let s:VMain = [s:aimi_0, s:aimi_D, 0, 0]
 let g:airline#themes#aimi#palette.visual = airline#themes#generate_color_map(s:VMain, s:Right, s:Middle)
 
-let s:IAMain = [s:aimi_2, s:aimi_1, 0, 0]
-let s:IARight = [s:aimi_2, s:aimi_1, 0, 0]
-let s:IAMiddle = [s:aimi_2, s:aimi_1, 0, 0]
+let s:IAMain = [s:aimi_0, s:aimi_2, 0, 0]
+let s:IARight = [s:aimi_0, s:aimi_2, 0, 0]
+let s:IAMiddle = [s:aimi_0, s:aimi_2, 0, 0]
 let g:airline#themes#aimi#palette.inactive = airline#themes#generate_color_map(s:IAMain, s:IARight, s:IAMiddle)

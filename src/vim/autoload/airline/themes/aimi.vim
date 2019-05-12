@@ -38,25 +38,41 @@ else
     let s:aimi_F = "{{light.spectrum.F}}"
 endif
 
-let s:Right = [s:aimi_0, s:aimi_3, 0, 0]
-let s:Middle = [s:aimi_5, s:aimi_1, 0, 0]
+let s:Right = [s:aimi_4, s:aimi_1, 0, 0]
+let s:Middle = [s:aimi_4, s:aimi_0, 0, 0]
+let s:NWarn = [s:aimi_0, s:aimi_E, 0, 0]
+let s:NError = [s:aimi_0, s:aimi_8, 0, 0]
 
-let s:NMain = [s:aimi_D, s:aimi_3, 0, 0]
+let s:NMain = [s:aimi_0, s:aimi_D, 0, 0]
 let g:airline#themes#aimi#palette.normal = airline#themes#generate_color_map(s:NMain, s:Right, s:Middle)
+let g:airline#themes#aimi#palette.normal.airline_warning = s:NWarn
+let g:airline#themes#aimi#palette.normal.airline_error = s:NError
 
-let s:NMMiddle = [s:aimi_9, s:aimi_1, 0, 0]
+let s:NMMiddle = [s:aimi_B, s:aimi_0, 0, 0]
 let g:airline#themes#aimi#palette.normal_modified = { 'airline_c': s:NMMiddle }
+let g:airline#themes#aimi#palette.normal_modified.airline_warning = s:NWarn
+let g:airline#themes#aimi#palette.normal_modified.airline_error = s:NError
 
 let s:IMain = [s:aimi_0, s:aimi_B, 0, 0]
 let g:airline#themes#aimi#palette.insert = airline#themes#generate_color_map(s:IMain, s:Right, s:Middle)
+let g:airline#themes#aimi#palette.insert.airline_warning = s:NWarn
+let g:airline#themes#aimi#palette.insert.airline_error = s:NError
 
-let s:RMain = [s:aimi_0, s:aimi_9, 0, 0]
+let s:RMain = [s:aimi_0, s:aimi_E, 0, 0]
 let g:airline#themes#aimi#palette.replace = airline#themes#generate_color_map(s:RMain, s:Right, s:Middle)
+let g:airline#themes#aimi#palette.replace.airline_warning = s:NWarn
+let g:airline#themes#aimi#palette.replace.airline_error = s:NError
 
-let s:VMain = [s:aimi_0, s:aimi_D, 0, 0]
+let s:VMain = [s:aimi_0, s:aimi_A, 0, 0]
 let g:airline#themes#aimi#palette.visual = airline#themes#generate_color_map(s:VMain, s:Right, s:Middle)
+let g:airline#themes#aimi#palette.visual.airline_warning = s:NWarn
+let g:airline#themes#aimi#palette.visual.airline_error = s:NError
 
 let s:IAMain = [s:aimi_0, s:aimi_2, 0, 0]
 let s:IARight = [s:aimi_0, s:aimi_2, 0, 0]
 let s:IAMiddle = [s:aimi_0, s:aimi_2, 0, 0]
+let s:IAWarn = [s:aimi_0, s:aimi_2, 0, 0]
+let s:IAError = [s:aimi_0, s:aimi_2, 0, 0]
 let g:airline#themes#aimi#palette.inactive = airline#themes#generate_color_map(s:IAMain, s:IARight, s:IAMiddle)
+let g:airline#themes#aimi#palette.inactive.airline_warning = s:IAWarn
+let g:airline#themes#aimi#palette.inactive.airline_error = s:IAError

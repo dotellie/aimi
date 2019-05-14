@@ -66,10 +66,10 @@ call s:hi("Normal", s:aimi_5, s:aimi_0, "", "")
 call s:hi("Title", s:aimi_D, "", "", "")
 call s:hi("NonText", s:aimi_2, "", "", "")
 
-call s:hi("SpellBad", "", "", "undercurl", s:aimi_8)
-call s:hi("SpellCap", "", "", "undercurl", s:aimi_E)
-call s:hi("SpellLocal", "", "", "undercurl", s:aimi_3)
-call s:hi("SpellRare", "", "", "undercurl", s:aimi_3)
+call s:hi("SpellBad", s:aimi_8, "", "undercurl", s:aimi_8)
+call s:hi("SpellCap", s:aimi_E, "", "undercurl", s:aimi_E)
+call s:hi("SpellLocal", s:aimi_3, "", "undercurl", s:aimi_3)
+call s:hi("SpellRare", s:aimi_3, "", "undercurl", s:aimi_3)
 
 " General UI
 call s:hi("SignColumn", s:aimi_2, s:aimi_0, "", "")

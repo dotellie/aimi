@@ -84,7 +84,7 @@ call s:hi("SpecialKey", s:aimi_3, s:aimi_1, "", "")
 
 " Menus
 call s:hi("WildMenu", s:aimi_5, s:aimi_2, "", "")
-call s:hi("Pmenu", s:aimi_5, s:aimi_2, "", "")
+call s:hi("Pmenu", s:aimi_5, s:aimi_1, "", "")
 call s:hi("PmenuSel", s:aimi_0, s:aimi_D, "", "")
 call s:hi("PmenuSbar", s:aimi_5, s:aimi_2, "", "")
 call s:hi("PmenuThumb", s:aimi_5, s:aimi_D, "", "")
@@ -194,3 +194,9 @@ call s:hi("SignatureMarkText", s:aimi_D, "", "", "")
 
 " vim-startify
 call s:hi("StartifyBracket", s:aimi_2, "", "", "")
+
+" CoC
+call s:hi("CocErrorSign", s:aimi_8, "", "", "")
+call s:hi("CocWarningSign", s:aimi_C, "", "", "")
+call s:hi("CocInfoSign", s:aimi_D, "", "", "")
+call s:hi("CocHintSign", s:aimi_A, "", "", "")

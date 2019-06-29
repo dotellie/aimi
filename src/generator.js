@@ -5,7 +5,7 @@ const mustache = require('mustache');
 
 const colorGenerator = require('./colors.js');
 
-if (!process.argv[2] || !process.argv[3]) {
+if (!process.argv[2]) {
     // eslint-disable-next-line no-console
     console.log('Missing required parameters. Usage: `npm run generate:[type] -- path/to/output`');
     return;
@@ -17,7 +17,7 @@ const colors = {
 };
 
 const root = `${__dirname}/${process.argv[2]}`;
-const output = process.argv[3];
+const output = process.argv[3] || '.';
 
 readdirp({ root }, ).on('data', ({ path }) => {
     const src = `${root}/${path}`;

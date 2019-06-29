@@ -33,4 +33,4 @@ module.exports = function generator(schemeName) {
     } else {
         throw new Error('unknown scheme name');
     }
-}
+};

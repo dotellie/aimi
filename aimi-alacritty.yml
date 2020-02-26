@@ -1,0 +1,16 @@
+aimi_schemes:
+  aimi_dark: &aimi-dark
+    primary:
+      background: "#2b313f"
+      foreground: "#c0cacf"
+    selection:
+      background: "#656e7d"
+    normal:
+      black: "#2b313f"
+      red: "#e38390"
+      green: "#81cd84"
+      yellow: "#d3f395"
+      blue: "#8ca1c7"
+      magenta: "#c59bf6"
+      cyan: "#88d2db"
+      white: "#ffffff"

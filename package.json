@@ -7,6 +7,7 @@
     "test": "mocha src/test",
     "lint": "eslint src/",
     "generate": "npm-run-all generate:*",
+    "generate:alacritty": "node src/generator.js alacritty",
     "generate:vim": "node src/generator.js vim",
     "install:vim": "npm run generate:vim -- $HOME/.config/nvim",
     "watch:vim": "watch 'npm run install:vim'"

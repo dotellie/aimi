@@ -1,0 +1,16 @@
+aimi_schemes:
+  aimi_dark: &aimi-dark
+    primary:
+      background: "{{dark.neutral.0}}"
+      foreground: "{{dark.neutral.5}}"
+    selection:
+      background: "{{dark.neutral.3}}"
+    normal:
+      black: "{{dark.neutral.0}}"
+      red: "{{dark.spectrum.8}}"
+      green: "{{dark.spectrum.B}}"
+      yellow: "{{dark.spectrum.C}}"
+      blue: "{{dark.spectrum.A}}"
+      magenta: "{{dark.spectrum.F}}"
+      cyan: "{{dark.spectrum.D}}"
+      white: "{{dark.neutral.7}}"
